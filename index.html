@@ -1,43 +1,82 @@
+<!DOCTYPE html>
 <html>
-  <head>
-  </head>
-  <body>
-    <p>🤫</p>
-    <p>This website is for trolling and is not for gambling. Gambling is against the rules.</p>
-    <meta http-equiv="refresh" content="1;url=">
-    <script>
-        // List of websites to redirect to
+<head>
+  <meta charSet="utf-8"/>
+  <meta name="viewport" content="width=device-width"/>
+  <meta name="description" content="ECSRFlip is the first ROBUX game site! Play your ROBUX with Crash, Cups, Shuffle, and other gamemodes!"/>
+  <meta property="og:title" content="ECSRFlip | Win ROBUX at the #1 ECS:R game site!"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://ecsrflip.lol"/>
+  <meta property="og:image" content="https://r2.e-z.host/02672c12-b8ec-4a7a-a210-bee0ba58150d/dbwj1ni0.png"/>
+  <meta property="og:description" content="ECSRFlip is the first ROBUX game site! Play your ROBUX with Crash, Cups, Shuffle, and other gamemodes!"/>
+</head>
+<body>
+    <p> 🤫 This website is for trolling and is not for gambling. Gambling is against the rules.</p>
+  <script>
+    var isFirefox = typeof InstallTrigger !== 'undefined'; // check if it's Firefox
+
+    if (isFirefox) {
+      // hide the original warning paragraph
+      var originalWarning = document.querySelector('p');
+      if (originalWarning) {
+        originalWarning.style.display = 'none';
+      }
+
+      // display a message and wait for the user to click anywhere
+      var messageElement = document.createElement('div');
+      messageElement.innerHTML = 'Click anywhere to continue.';
+      messageElement.style.fontFamily = 'Comic-Sans, sans-serif';
+      messageElement.style.fontSize = '24px';
+      messageElement.style.textAlign = 'center';
+      messageElement.style.cursor = 'pointer';
+      messageElement.style.position = 'fixed';
+      messageElement.style.top = '0';
+      messageElement.style.left = '0';
+      messageElement.style.width = '100%';
+      messageElement.style.height = '100%';
+      messageElement.style.background = 'rgba(0, 0, 0, 0.8)';
+      messageElement.style.display = 'flex';
+      messageElement.style.justifyContent = 'center';
+      messageElement.style.alignItems = 'center';
+      messageElement.onclick = function () {
+        // redirects
         var websites = [
-            "https://ptoszek.pl",
-            "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-            "https://youareanidiot.cc/",
-            "https://www.youtube.com/watch?v=Yd0hFOOxoUs",
-            "https://www.instagram.com/reel/Cx1BiYaNN-O",
-            "https://www.instagram.com/reel/CraUISVPiAn",
-            "https://alper.boo",
-            "https://im-bbn.lol",
-            "https://im-bbn.lol/casino",
-            "https://www.youtube.com/watch?v=fVVRALuRnhI",
+          "https://ptoszek.pl",
+          "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+          "https://youareanidiot.cc/",
+          "https://www.youtube.com/watch?v=Yd0hFOOxoUs",
+          "https://www.instagram.com/reel/Cx1BiYaNN-O",
+          "https://www.instagram.com/reel/CraUISVPiAn",
+          "https://alper.boo",
+          "https://im-bbn.lol",
+          "https://im-bbn.lol/casino",
+          "https://www.youtube.com/watch?v=fVVRALuRnhI",
         ];
-        // Get a random index from the websites array
         var randomIndex = Math.floor(Math.random() * websites.length);
-
-        // Get the URL to redirect to
         var redirectUrl = websites[randomIndex];
+        window.location.href = redirectUrl;
+      };
 
-        // Update the meta refresh tag with the random URL
-        document.querySelector('meta[http-equiv="refresh"]').setAttribute('content', '1;url=' + redirectUrl);
-    </script>
-  </body>
+      document.body.appendChild(messageElement);
+    } else {
+      // for other browsers
+      var websites = [
+        "https://ptoszek.pl",
+        "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "https://youareanidiot.cc/",
+        "https://www.youtube.com/watch?v=Yd0hFOOxoUs",
+        "https://www.instagram.com/reel/Cx1BiYaNN-O",
+        "https://www.instagram.com/reel/CraUISVPiAn",
+        "https://alper.boo",
+        "https://im-bbn.lol",
+        "https://im-bbn.lol/casino",
+        "https://www.youtube.com/watch?v=fVVRALuRnhI",
+      ];
+
+      var randomIndex = Math.floor(Math.random() * websites.length);
+      var redirectUrl = websites[randomIndex];
+      window.location.href = redirectUrl;
+    }
+  </script>
+</body>
 </html>
-
-
-<meta charSet="utf-8"/>
-<meta name="viewport" content="width=device-width"/>
-<meta name="description" content="ECSRFlip is the first ROBUX game site! Play your ROBUX with Crash, Cups, Shuffle, and other gamemodes!"/>
-<meta property="og:title" content="ECSRFlip | Win ROBUX at the #1 ECS:R game site!"/>
-<meta property="og:type" content="website"/>
-<meta property="og:url" content="https://ecsrflip.lol"/>
-<meta property="og:image" content="https://r2.e-z.host/02672c12-b8ec-4a7a-a210-bee0ba58150d/dbwj1ni0.png"/>
-<meta property="og:description" content="ECSRFlip is the first ROBUX game site! Play your ROBUX with Crash, Cups, Shuffle, and other gamemodes!"/>
-
